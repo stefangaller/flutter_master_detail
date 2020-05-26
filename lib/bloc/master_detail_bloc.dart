@@ -1,6 +1,8 @@
 import 'dart:async';
+
 import 'package:bloc/bloc.dart';
 import 'package:master_detail/data/item.dart';
+
 import './bloc.dart';
 
 class MasterDetailBloc extends Bloc<MasterDetailEvent, MasterDetailState> {

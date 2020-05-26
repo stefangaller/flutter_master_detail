@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:master_detail/ui/detail.dart';
 import 'package:master_detail/ui/master.dart';
@@ -18,7 +17,6 @@ class HomePage extends StatelessWidget {
   }
 }
 
-
 class _MobileHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -31,15 +29,9 @@ class _TabletHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        Container(
-          width: 300,
-          child: Master(),
-        ),
-        Expanded(
-          child: Detail(),
-        )
+        Container(width: 300, child: Master()),
+        Expanded(child: Detail())
       ],
     );
   }
 }
-

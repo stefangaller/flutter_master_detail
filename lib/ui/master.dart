@@ -34,9 +34,7 @@ class _MasterState extends State<Master> {
         bloc: _bloc,
         builder: (context, state) {
           if (state is LoadingItemsState) {
-            return Center(
-              child: CircularProgressIndicator(),
-            );
+            return Center(child: CircularProgressIndicator());
           } else if (state is NoItemsState) {
             return Center(child: Text("No Items"));
           } else if (state is LoadedItemsState) {
