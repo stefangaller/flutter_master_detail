@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:master_detail/bloc/bloc.dart';
 import 'package:master_detail/data/item.dart';
-import 'package:master_detail/ui/detail_page.dart';
+import 'package:master_detail/ui/detail.dart';
 
 class Master extends StatefulWidget {
   @override
@@ -68,7 +68,7 @@ class _MasterState extends State<Master> {
   _selectItem(BuildContext context, Item item) {
     _bloc.add(SelectItemEvent(item));
     if (MediaQuery.of(context).size.shortestSide < 768) {
-      final route = MaterialPageRoute(builder: (context) => MobileDetailPage());
+      final route = MaterialPageRoute(builder: (context) => Detail());
       Navigator.push(context, route);
     }
   }

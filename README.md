@@ -1,7 +1,7 @@
 # Tutorial: Simple responsive Master-Detail View in Flutter
 
 This repository contains the source code for my tutorial 
-["Simple responsive Master-Detail View in Flutter"](https://stefangaller.at/app-development/flutter/responsive-master-detail-view).
+["Simple responsive Master-Detail View in Flutter"](https://stefangaller.at/app-development/flutter/responsive-master-detail).
 
 ## Structure
 - lib/bloc: contains the bloc (business logic component)
