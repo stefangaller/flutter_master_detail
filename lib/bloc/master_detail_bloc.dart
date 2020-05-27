@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:bloc/bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:master_detail/data/item.dart';
 
-import './bloc.dart';
+import 'bloc.dart';
 
 class MasterDetailBloc extends Bloc<MasterDetailEvent, MasterDetailState> {
   List<Item> _items = [];
@@ -18,10 +18,9 @@ class MasterDetailBloc extends Bloc<MasterDetailEvent, MasterDetailState> {
   ) async* {
     if (event is AddItemEvent) {
       _items.add(event.element);
-    } else if (event is SelectItemEvent){
+    } else if (event is SelectItemEvent) {
       _selected = event.selected;
     }
-
     yield* _loadItems();
   }
 

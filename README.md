@@ -1,16 +1,10 @@
-# master_detail
+# Tutorial: Simple responsive Master-Detail View in Flutter
 
-A new Flutter project.
+This repository contains the source code for my tutorial 
+["Simple responsive Master-Detail View in Flutter"](https://stefangaller.at/app-development/flutter/responsive-master-detail-view).
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Structure
+- lib/bloc: contains the bloc (business logic component)
+- lib/data: contains the model used in this app
+- lib/ui: contains the UI elements of the app
+- main.dart: the starting point of the Flutter app

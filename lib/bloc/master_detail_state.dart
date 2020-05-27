@@ -3,9 +3,6 @@ import 'package:master_detail/data/item.dart';
 
 abstract class MasterDetailState extends Equatable {
   const MasterDetailState();
-
-  @override
-  bool get stringify => true;
 }
 
 class LoadingItemsState extends MasterDetailState {
